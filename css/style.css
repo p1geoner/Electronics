@@ -1,6 +1,8 @@
 body{
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
 }
 
 /* HEADER */
@@ -485,6 +487,11 @@ label, a{ /*при наведении на стрелки или переклю�
 .all-characteristics a{
     text-decoration: none;
     color: #3191D0;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;  
     
 }
 .all-characteristics a:hover{
@@ -904,6 +911,17 @@ height: 20px;
 flex-direction: row;
 align-items: center;
 }
+.famous-review__feedback-like-img{
+    height: 15.833333015441895px;
+    width: 16.666667938232422px;
+    cursor: pointer;
+
+}
+.famous-review__feedback-dislike-img{
+    height: 15.833333015441895px;
+    width: 16.666667938232422px; 
+    cursor: pointer;
+}
 .famous-review__feedback-dislike{
     display: flex;
 flex-direction: row;
@@ -927,6 +945,30 @@ a{
 .tabs__body-content{
     transition: all 0.5s;
 }
+.estimates__butn-1-heart{
+    background-image: url(img/heart.jpg);
+    width: 20px;
+    height: 18px;
+    cursor: pointer;
+}
+#ram-r2:checked +.Main-info-prod__text-js{
+    content: 'другой текст';
+}
+.footer_container {
+    width: 1140px;
+    height: 1915px;
+}
+.geo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.geo img{
+    margin-right: 11px;
+}
+
+
 
 
 
