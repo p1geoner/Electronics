@@ -15,7 +15,7 @@
                 ymaps.ready(function(){
                     var geolocation = ymaps.geolocation;
                     $('#cou').html('Ваша страна: '+geolocation.country);
-                    $('#tow').html('Ваш город: '+geolocation.city);
+                    $('#tow').html(geolocation.city);
                     $('#reg').html('Ваш регион: '+geolocation.region);
                 });
             });
@@ -30,7 +30,7 @@
                     <div class="geo">
                         
                             <img src="img/strelkageo.svg" alt="">
-                            <span id="town"></span>
+                            <span id="tow">Город</span>
                         
                     </div>
                     
@@ -134,7 +134,7 @@
                         </div>
                         <div class="options__color">
                             <div class="color-text">
-                                <span class="color-text_bold">Цвет:</span><span class="color-text_400">Темная ночь</span>
+                                <span class="color-text_bold">Цвет:</span><span class="color-text_400" id="color-text-js">Темная ночь</span>
                             </div>
                             <div class="color-btns">
                                 <input type="radio" id="r1" name="radio-color" value="1" checked>

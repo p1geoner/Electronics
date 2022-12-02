@@ -107,11 +107,43 @@ bonus_text=document.getElementById('bonus');
 credit_text=document.getElementById('credit-price');
 rassrochka_text=document.getElementById('rassrochka-price-1');
 rassrochka_text_2=document.getElementById('rassrochka-price-2');
+color_text_1=document.getElementById('color-text-js');
+color_text_2=document.getElementById('color-js-main_text');
 var radiocol=document.getElementsByName('radio-color');
 var radiorm =document.getElementsByName('radio-ram');
+
 for(var k=0; k<radiorm.length;k++){
     radiorm[k].onchange=changing_text;
 
+}
+for(var c=0; c<radiocol.length;c++){
+    radiocol[c].onchange=changing_text_col;
+
+}
+function changing_text_col(){
+    switch(this.value){
+        case '1':
+            color_text_1.innerHTML="Темная ночь";
+            color_text_2.innerHTML="Midnight";
+            break;
+        case '2':
+            color_text_1.innerHTML="Cияющая звезда";
+            color_text_2.innerHTML="Starlight";
+            break;
+        case '3':
+            color_text_1.innerHTML="Синий";
+            color_text_2.innerHTML="Blue";
+            break;
+        case '4':
+            color_text_1.innerHTML="Розовый";
+            color_text_2.innerHTML="Ping";
+            break;
+        case '5':
+            color_text_1.innerHTML="Красный";
+            color_text_2.innerHTML="PRODUCT(Red)";
+            break;
+                
+    }
 }
 function changing_text(){
     
