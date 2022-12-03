@@ -22,7 +22,7 @@
 </script>
 </head>
 <body>
-    <div class="main">
+    
         <header class="header">
            
             <div class="header_width-1140px">
@@ -52,13 +52,19 @@
                         <a href="" class="logo"><img src="img/Logo.svg" alt="" class="logo__img"></a>
                     </div>
                     
-                <form action="">  
+                  
                     <select name="" id="" class="form__select">
                         <option value="1">Каталог</option>
                         <option value="2">Телефоны</option>
                     </select>
-                    <input type="search" class="form__search"  required placeholder="Поиск по сайту">
-                </form>
+                <div class="header__search">
+                    <input type="search" class="form__search"  value="Поиск по сайту">
+                    <span class="header__search-icon">
+                        <img src="img/lupa-poisk.svg" height="20px" width="20px" alt="">
+                    </span>
+                </div>
+                    
+                
                 <ul class="menu">
                     <li><a href="" class="header__btns_bottom"><img src="img/Compare.svg" alt=""><span>Сравнить</span> </a></li>
                     <li><a href="" class="header__btns_bottom"><img src="img/Market.svg" alt=""><span>Корзина</span></a></li>
@@ -70,6 +76,7 @@
 
 
         </header>
+        <div class="main">
         <div class="main_width-1140px">
             <section class="User-Placement">
                 <div class="User-PLacement__Container">
@@ -79,7 +86,7 @@
             <section class="Main-info-prod">
                 <div class="Main-info-prod__container">
                     <div class="Main-info-prod__text">
-                        <p class="Main-info-prod__text-js" id="Main-info-prod__text-js"> Смартфон Apple iPhone 13 <span id="memory-js-main_text">128GB</span> <span id="color-js-main_text">Midnight</span>  (MLNW3RU/A)</p>
+                        <h1 class="Main-info-prod__text-js" id="Main-info-prod__text-js"> Смартфон Apple iPhone 13 <span id="memory-js-main_text">128GB</span> <span id="color-js-main_text">Midnight</span>  (MLNW3RU/A)</h1>
                     </div>
                     <div class="all">
                         <input checked type="radio" name="respond" id="desktop">
@@ -356,12 +363,206 @@
                     <a href="#" class="famous-review__feedback-link">Комментировать</a>
                 </div>
             </div>
+            <div class="user-watched">
+                <div class="user-watched__text">
+                    <p class="user-watched__text_bold">
+                        Вы недавно смотрели
+                    </p>
+                </div>
+                <div class="user-watched__container_flex">
+                    <div class="user-watched__container-item">
+                        <img src="img/pic1.png" alt="" class="user-watched__container-item-img">
+                        <div class="flex-container-gap">
+                        <p>Кофемашина Philips EP1220/00 Series 1200</p>
+                        <div class="user-watched__container-item-star">
+                            <div class="star"><img src="img/star.svg" alt=""></div>
+
+                            <a href="#" class="user-watched__container-item-text-red">4,9</a>
+                            <a href="#" class="user-watched__container-item-text">/  4 отзывов</a>
+                            
+                            
+                        </div>
+                        <div class="user-watched__container-item-price">
+                            <div class="user-watched__container-item-price-old">
+                                37 990
+                            </div>
+                            <div class="user-watched__container-item-price-new">
+                                25 990 ₽
+                            </div>
+
+                        </div>
+                        </div>
+                        <div class="user-watched__container-item-form">
+                            <div class="user-watched__container-item-form-btn"><img src="img/buy.svg" alt=""></div>
+                            <div class="user-watched__container-item-form-heart"><img src="img/heart.jpg" alt=""></div>
+                            <div class="user-watched__container-item-form-stat"><img src="img/stat.svg" alt=""></div>
+                        </div>
+                        
+                    </div>
+                    <div class="user-watched__container-item">
+                        <img src="img/pic2.png" alt="" class="user-watched__container-item-img">
+                        <div class="flex-container-gap">
+                        <p>Ноутбук HUAWEI MateBook D 15 BoD-WDH9 8+512GB Space Grey</p>
+                        <div class="user-watched__container-item-star">
+                            <div class="star"><img src="img/star.svg" alt=""></div>
+
+                            <a href="#" class="user-watched__container-item-text-red">4,2</a>
+                            <a href="#" class="user-watched__container-item-text">/  12 отзывов</a>
+                            
+                            
+                        </div>
+                        <div class="user-watched__container-item-price">
+                            <div class="user-watched__container-item-price-old">
+                                69 990
+                            </div>
+                            <div class="user-watched__container-item-price-new">
+                                63 990 ₽
+                            </div>
+
+                        </div>
+                        </div>
+                        <div class="user-watched__container-item-form">
+                            <div class="user-watched__container-item-form-btn"><img src="img/buy.svg" alt=""></div>
+                            <div class="user-watched__container-item-form-heart"><img src="img/heart.jpg" alt=""></div>
+                            <div class="user-watched__container-item-form-stat"><img src="img/stat.svg" alt=""></div>
+                        </div>
+                        
+                    </div>
+                    <div class="user-watched__container-item">
+                        <img src="img/pic3.png" alt="" class="user-watched__container-item-img">
+                        <div class="flex-container-gap">
+                            <p>Смартфон Apple iPhone 11 128GB Black (MHDH3RU/A)</p>
+                        <div class="user-watched__container-item-star">
+                            <div class="star"><img src="img/star.svg" alt=""></div>
+
+                            <a href="#" class="user-watched__container-item-text-red">4,4</a>
+                            <a href="#" class="user-watched__container-item-text">/  34 отзыва</a>
+                            
+                            
+                        </div>
+                        <div class="user-watched__container-item-price">
+                            <div class="user-watched__container-item-price-new item3">
+                                55 990 ₽
+                            </div>
+
+                        </div>
+                        
+                        </div>
+                        <div class="user-watched__container-item-form">
+                            <div class="user-watched__container-item-form-btn"><img src="img/buy.svg" alt=""></div>
+                            <div class="user-watched__container-item-form-heart"><img src="img/heart.jpg" alt=""></div>
+                            <div class="user-watched__container-item-form-stat"><img src="img/stat.svg" alt=""></div>
+                        </div>
+                        
+                        
+                    </div>
+                    <div class="user-watched__container-item">
+                        <img src="img/pic4.png" alt="" class="user-watched__container-item-img">
+                        <div class="flex-container-gap">
+                        <p>Смартфон POCO X3 Pro 256GB Phantom Black</p>
+                        <div class="user-watched__container-item-star">
+                            <div class="star"><img src="img/star.svg" alt=""></div>
+
+                            <a href="#" class="user-watched__container-item-text-red">4,5</a>
+                            <a href="#" class="user-watched__container-item-text">/  22 отзывов</a>
+                            
+                            
+                        </div>
+                        <div class="user-watched__container-item-price">
+                            <div class="user-watched__container-item-price-old">
+                                26 990
+                            </div>
+                            <div class="user-watched__container-item-price-new">
+                                24 990 ₽
+                            </div>
+
+                        </div>
+                        </div>  
+                        <div class="user-watched__container-item-form">
+                            <div class="user-watched__container-item-form-btn"><img src="img/buy.svg" alt=""></div>
+                            <div class="user-watched__container-item-form-heart"><img src="img/heart.jpg" alt=""></div>
+                            <div class="user-watched__container-item-form-stat"><img src="img/stat.svg" alt=""></div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
         </div>
 
     </div>
     <footer class="footer">
         <div class="footer__container">
+            
+            <div class="logo-div">
+                <a href="" class="logo"><img src="img/Logo.svg" alt="" class="logo__img"></a>
+            </div>
+            <div class="footer__container-flex">
+            <div class="footer__tabs">
+                <div class="footer__tabs-header">
+                    <div class="footer__tabs-header-item">
+                        <p class="footer__tabs-header-text">
+                            О Компании
+                        </p>
+                    </div>
+                    <div class="footer__tabs-header-item">
+                        <p class="footer__tabs-header-text">
+                            Покупателям
+                        </p>
+                    </div>
+                </div>
+                <div class="footer__tabs-body">
+                    <div class="footer__tabs-body-item">
+                        <div class="footer__tabs-body-item">
+                            <p>Про ELECTRONICS</p>
+                            <p>Новости</p>
+                            <p>Партнерам</p>
+                            <p>Вакансии</p>
+                            <p>Политика конфиденциальности</p>
+                            <p>Персональные данные</p>
+                            <p>Правила продаж</p>
+                            <p>Сервисные центры</p>
+                        </div>
+                    </div>
+                    <div class="footer__tabs-body-item flex">
+                        <div class="footer__tabs-body-item-container_1">
+                            <p>Как оформить заказ</p>
+                            <p>Способы оплаты</p>
+                            <p>Кредиты</p>
+                            <p>Доставка</p>
+                            <p>Статус заказа</p>
+                            <p>Обмен, возврат, гарантия</p>
+                            <p>Проверка статуса ремонта</p>
+                        </div>
+                        <div class="footer__tabs-body-item-container_2">
+                            <p>Юридическим лицам</p>
+                            <p>Проверка счета</p>
+                            <p>Корпоративные отделы</p>
+                            <p>Подарочные карты</p>
+                            <p>Бонусная программа</p>
+                            <p>Помощь </p>
+                            <p>Обратная связь</p>
+                        </div>
+                    </div>
+                    
+                </div>
 
+            </div>
+            <div class="footer__container-social">
+                <div class="footer__container-social-text">Мы в соцсетях</div>
+                <div class="footer__container-social-btns">
+                    <div class="footer__container-social-btn"><a href=""><img src="img/facebook.svg" alt=""></a></div>
+                    <div class="footer__container-social-btn"><a href=""><img src="img/twitter.svg" alt=""></a></div>
+                    <div class="footer__container-social-btn"><a href=""><img class="img-width-22px" src="img/inst.svg" alt=""></a></div>
+                    <div class="footer__container-social-btn"><a href=""><img src="img/vk.svg" alt=""></a></div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="footer__container-2">
+            <div class="footer__container-2-copy"><p>Copyright 2022</p></div>
+            <div class="footer__container-2-text">
+                <a href="">Политика конфиденциальности</a><a href="">Публичная оферта</a><a href="">Карта сайта</a>
+            </div>
         </div>
         
     </footer>

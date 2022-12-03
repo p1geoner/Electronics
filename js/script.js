@@ -7,7 +7,6 @@ link.forEach(function(elem){
     elem.addEventListener('click',open);
 })
 function open(){
-    console.log('Кнопка нажата');
     
     navItem.forEach(function(elem){
         elem.classList.remove('active');
