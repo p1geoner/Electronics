@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com/%22%3E<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     
@@ -22,7 +22,7 @@
 </script>
 </head>
 <body>
-    
+
         <header class="header">
            
             <div class="header_width-1140px">
@@ -30,7 +30,7 @@
                     <div class="geo">
                         
                             <img src="img/strelkageo.svg" alt="">
-                            <span id="tow">Город</span>
+                            <span id="reg">Город</span>
                         
                     </div>
                     
@@ -45,20 +45,27 @@
                 
 
             </div>
-            <hr>
+            <div class="hr"></div>
             <div class="header_width-1140px">
                 <div class="header_bottom">
                     <div class="logo-div">
                         <a href="" class="logo"><img src="img/Logo.svg" alt="" class="logo__img"></a>
                     </div>
+                    <div class="geo2 geo">
+                        
+                        <img src="img/strelkageo.svg" alt="">
+                        <span id="tow">Город</span>
                     
-                  
+                    </div>  
+                  <div class="header__select">
                     <select name="" id="" class="form__select">
                         <option value="1">Каталог</option>
                         <option value="2">Телефоны</option>
                     </select>
+                  </div>
+                    
                 <div class="header__search">
-                    <input type="search" class="form__search"  value="Поиск по сайту">
+                    <input type="search" class="form__search"  placeholder="Поиск по сайту">
                     <span class="header__search-icon">
                         <img src="img/lupa-poisk.svg" height="20px" width="20px" alt="">
                     </span>
@@ -123,119 +130,122 @@
                                 </div>
                             </article>
                     </div>
-                    <div class="options-estimates-info ">
-                        <div class="estimates__container container-h32px-w225px">
-                            <div class="estimates__container-align-items-center">
-                                <div class="star"><img src="img/star.svg" alt=""></div>
-                                <div class="estimates__text_container">
-                                <a href="#" class="estimates__text-red">5,0</a>
-                                <a href="#" class="estimates__text">/  9 отзывов</a>
-                            </div>
-                            </div>
-                            <div class="estimates__butn-1">
-                                <img src="img/heart.jpg" alt="" class="estimates__butn-1-heart">
-                            </div>
-                            <div class="estimates__btn-2">
-                                <input type="image" src="img/stat.svg" class="estimates__butn-1-stat">
-                            </div>  
-                        </div>
-                        <div class="options__color">
-                            <div class="color-text">
-                                <span class="color-text_bold">Цвет:</span><span class="color-text_400" id="color-text-js">Темная ночь</span>
-                            </div>
-                            <div class="color-btns">
-                                <input type="radio" id="r1" name="radio-color" value="1" checked>
-                                <label for="r1" class="color-r1"></label>
-                                <input type="radio" id="r2" name="radio-color" value="2" >
-                                <label for="r2" class="color-r2"></label>
-                                <input type="radio" id="r3" name="radio-color" value="3" >
-                                <label for="r3" class="color-r3"></label>
-                                <input type="radio" id="r4" name="radio-color" value="4" >
-                                <label for="r4" class="color-r4"></label>
-                                <input type="radio" id="r5" name="radio-color" value="5" >
-                                <label for="r5" class="color-r5"></label>
-                            </div>
-                        </div>
-                        <div class="options__ram">
-                            <p class="options__ram-text">Объем памяти:</p>
-                            <div class="options__ram_flex">
-                                <input type="radio" id="ram-r1" name="radio-ram" value="1" checked>
-                                <label for="ram-r1" class="ram-r1" ><p>128</p></label>
-                                <input type="radio" id="ram-r2" name="radio-ram" value="2" >
-                                <label for="ram-r2" class="ram-r2"><p>256</p></label>
-                                <input type="radio" id="ram-r3" name="radio-ram" value="3" >
-                                <label for="ram-r3" class="ram-r3"><p>512</p></label>
-                            </div>
-                            
-                        </div>
-                        <div class="info">
-                            <div class="short-characteristics">
-                                <p class="char-text">Экран......................................................<span class="black">6.1"/2532x1170 Пикс</span></p>
-                                <p class="char-text">Технология экрана..............................<span class="black">OLED</span></p>
-                                <p class="char-text">Тип процессора.....................................<span class="black">A15 Bionic</span></p>
-                                <p class="char-text">Встроенная память (ROM).................<span class="black ROM-js">256 ГБ</span></p>
-                                <p class="char-text">Основная камера МПикс...................<span class="black">12/12</span></p>
-                                <p class="char-text">Оптическая стабилизация.................<span class="black">Да</span></p>
-                                <p class="char-text">Фронтальная камера МПикс.............<span class="black">12</span></p>
-                                <p class="char-text">Сенсор распознавания лица.............<span class="black">Да</span></p>
-                            </div>
-                            <div class="all-characteristics">
-                                <a href="#tab-2" class="all-characteristics-link"
-                                id="all-characteristics-link">Все характеристики</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="Main-info-prod__price">
-                        <div class="Main-info-prod__price-container">
-                            <div class="Main-info-prod__price-container_flex">
-                        
-                        <div class="prod__price">
-                            <p class="price_throwline" id="old_price">79 990</p>
-                            <p class="main-price"><span id="new_price">77 990</span> ₽</p>
-                        </div>
-                        <div class="rassrochka">
-                            <span class="rassrochka__text">Рассрочка от <span id="rassrochka-price-2">3 612</span> ₽/мес</span>
-                            <input type="image" src="img/vopros2.jpg" class="rassrochka-info">
-                        </div>
-                        <div class="big-btn">
-                            <input class="big-btn__button" type="button" value="Добавить в корзину">
-                        </div>
-                        </div>
-                        </div>
-                        <div class="bonus-credit-rassrochka">
-                            <div class="bonus-credit-rassrochka__container">
-
-                            
-                            <div class="first-line">
-                                <img src="img/money.svg" alt="">
-                                <div class="first-line__text"><span><span class="red" id="bonus">+1 950</span> Бонусов при покупке</span></div>
-                                <input type="image" src="img/vopros2.jpg" class="rassrochka-info">
-
-                            </div>
-                            <div class="second-line">
-                                <img src="img/percent.svg" alt="">
-                                <div class="second-line__text"><span>Кредит от <span id="credit-price">3 161</span> ₽/мес</span></div>
-                                <input type="image" src="img/vopros2.jpg" class="rassrochka-info">
-                            </div>
-                            <div class="third-line">
-                                <img src="img/percent.svg" alt="">
-                                <div class="third-line__text"><span>Рассрочка от <span id="rassrochka-price-1">3 612</span>  ₽/мес</span></div>
-                                <input type="image" src="img/vopros2.jpg" class="rassrochka-info">
-                            </div>
-                            </div>
-                            
-                        </div>
-                        <div class="delivery">
-                            <div class="delivery_container-flex">
-                                <div class="bold-text">
-                                    <span>Способы получения заказа</span>
+                    <div class="Main-info-prod__flex">
+                        <div class="options-estimates-info ">
+                            <div class="estimates__container container-h32px-w225px">
+                                <div class="estimates__container-align-items-center">
+                                    <div class="star"><img src="img/star.svg" alt=""></div>
+                                    <div class="estimates__text_container">
+                                    <a href="#" class="estimates__text-red">5,0</a>
+                                    <a href="#" class="estimates__text">/  9 отзывов</a>
                                 </div>
-                                <div class="second-text">
-                                    <span><span class="red">Самовывоз</span> из 5 магазинов завтра 
-                                    и позже, бесплатно</span>
                                 </div>
-                                <div class="third-text">
-                                    <span><span class="red">Доставка</span> Завтра, 490 ₽</span>
+                                <div class="estimates__butn-1">
+                                    <img src="img/heart.jpg" alt="" class="estimates__butn-1-heart">
+                                </div>
+                                <div class="estimates__btn-2">
+                                    <input type="image" src="img/stat.svg" class="estimates__butn-1-stat">
+                                </div>  
+                            </div>
+                            <div class="options__color">
+                                <div class="color-text">
+                                    <span class="color-text_bold">Цвет:</span><span class="color-text_400" id="color-text-js">Темная ночь</span>
+                                </div>
+                                <div class="color-btns">
+                                    <input type="radio" id="r1" name="radio-color" value="1" checked>
+                                    <label for="r1" class="color-r1"></label>
+                                    <input type="radio" id="r2" name="radio-color" value="2" >
+                                    <label for="r2" class="color-r2"></label>
+                                    <input type="radio" id="r3" name="radio-color" value="3" >
+                                    <label for="r3" class="color-r3"></label>
+                                    <input type="radio" id="r4" name="radio-color" value="4" >
+                                    <label for="r4" class="color-r4"></label>
+                                    <input type="radio" id="r5" name="radio-color" value="5" >
+                                    <label for="r5" class="color-r5"></label>
+                                </div>
+                            </div>
+                            <div class="options__ram">
+                                <p class="options__ram-text">Объем памяти:</p>
+                                <div class="options__ram_flex">
+                                    <input type="radio" id="ram-r1" name="radio-ram" value="1" checked>
+                                    <label for="ram-r1" class="ram-r1" ><p>128</p></label>
+                                    <input type="radio" id="ram-r2" name="radio-ram" value="2" >
+                                    <label for="ram-r2" class="ram-r2"><p>256</p></label>
+                                    <input type="radio" id="ram-r3" name="radio-ram" value="3" >
+                                    <label for="ram-r3" class="ram-r3"><p>512</p></label>
+                                </div>
+                                
+                            </div>
+                            
+                            <div class="info">
+                                <div class="short-characteristics">
+                                    <p class="char-text">Экран......................................................<span class="black">6.1"/2532x1170 Пикс</span></p>
+                                    <p class="char-text">Технология экрана..............................<span class="black">OLED</span></p>
+                                    <p class="char-text">Тип процессора.....................................<span class="black">A15 Bionic</span></p>
+                                    <p class="char-text">Встроенная память (ROM).................<span class="black ROM-js">256 ГБ</span></p>
+                                    <p class="char-text">Основная камера МПикс...................<span class="black">12/12</span></p>
+                                    <p class="char-text">Оптическая стабилизация.................<span class="black">Да</span></p>
+                                    <p class="char-text">Фронтальная камера МПикс.............<span class="black">12</span></p>
+                                    <p class="char-text">Сенсор распознавания лица.............<span class="black">Да</span></p>
+                                </div>
+                                <div class="all-characteristics">
+                                    <a href="#tab-2" class="all-characteristics-link"
+                                    id="all-characteristics-link">Все характеристики</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="Main-info-prod__price">
+                            <div class="Main-info-prod__price-container">
+                                <div class="Main-info-prod__price-container_flex">
+                            
+                            <div class="prod__price">
+                                <p class="price_throwline" id="old_price">79 990</p>
+                                <p class="main-price"><span id="new_price">77 990</span> ₽</p>
+                            </div>
+                            <div class="rassrochka">
+                                <span class="rassrochka__text">Рассрочка от <span id="rassrochka-price-2">3 612</span> ₽/мес</span>
+                                <input type="image" src="img/vopros2.jpg" class="rassrochka-info">
+                            </div>
+                            <div class="big-btn">
+                                <input class="big-btn__button" type="button" value="Добавить в корзину">
+                            </div>
+                            </div>
+                            </div>
+                            <div class="bonus-credit-rassrochka">
+                                <div class="bonus-credit-rassrochka__container">
+    
+                                
+                                <div class="first-line">
+                                    <img src="img/money.svg" alt="">
+                                    <div class="first-line__text"><span><span class="red" id="bonus">+1 950</span> Бонусов при покупке</span></div>
+                                    <input type="image" src="img/vopros2.jpg" class="rassrochka-info">
+    
+                                </div>
+                                <div class="second-line">
+                                    <img src="img/percent.svg" alt="">
+                                    <div class="second-line__text"><span>Кредит от <span id="credit-price">3 161</span> ₽/мес</span></div>
+                                    <input type="image" src="img/vopros2.jpg" class="rassrochka-info">
+                                </div>
+                                <div class="third-line">
+                                    <img src="img/percent.svg" alt="">
+                                    <div class="third-line__text"><span>Рассрочка от <span id="rassrochka-price-1">3 612</span>  ₽/мес</span></div>
+                                    <input type="image" src="img/vopros2.jpg" class="rassrochka-info">
+                                </div>
+                                </div>
+                                
+                            </div>
+                            <div class="delivery">
+                                <div class="delivery_container-flex">
+                                    <div class="bold-text">
+                                        <span>Способы получения заказа</span>
+                                    </div>
+                                    <div class="second-text">
+                                        <span><span class="red">Самовывоз</span> из 5 магазинов завтра 
+                                        и позже, бесплатно</span>
+                                    </div>
+                                    <div class="third-text">
+                                        <span><span class="red">Доставка</span> Завтра, 490 ₽</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -503,11 +513,13 @@
                         <p class="footer__tabs-header-text">
                             О Компании
                         </p>
+                        <img src="img/strelka-footer.svg" alt="">
                     </div>
                     <div class="footer__tabs-header-item">
                         <p class="footer__tabs-header-text">
                             Покупателям
                         </p>
+                        <img src="img/strelka-footer.svg" alt="">
                     </div>
                 </div>
                 <div class="footer__tabs-body">
