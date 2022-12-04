@@ -174,6 +174,86 @@ function changing_text(){
     }
 }
 
+heart1 = document.querySelector('.user-watched__container-item-form-heart img');
+
+heart1.onclick = red_izb;
+a=0;
+function red_izb(){
+    
+    if(a>=1){
+        a=0;
+        heart1.src='img/'+img[a]+'.jpg';
+    }else{
+        a=1
+        heart1.src='img/'+img[a]+'.jpg';
+    }
+    
+    
+    
+    
+    
+    
+}
+heart2 = document.querySelector('.user-watched__container-item-form-heart.second img');
+
+heart2.onclick = red2_izb;
+c=0;
+function red2_izb(){
+    
+    if(c>=1){
+        c=0;
+        heart2.src='img/'+img[c]+'.jpg';
+    }else{
+        c=1
+        heart2.src='img/'+img[c]+'.jpg';
+    }
+    
+    
+    
+    
+    
+    
+}
+heart3 = document.querySelector('.user-watched__container-item-form-heart.third img');
+
+heart3.onclick = red3_izb;
+n=0;
+function red3_izb(){
+    
+    if(n>=1){
+        n=0;
+        heart3.src='img/'+img[n]+'.jpg';
+    }else{
+        n=1
+        heart3.src='img/'+img[n]+'.jpg';
+    }
+    
+    
+    
+    
+    
+    
+}
+heart4 = document.querySelector('.user-watched__container-item-form-heart.fourth img');
+
+heart4.onclick = red4_izb;
+m=0;
+function red4_izb(){
+    
+    if(m>=1){
+        m=0;
+        heart4.src='img/'+img[m]+'.jpg';
+    }else{
+        m=1
+        heart4.src='img/'+img[m]+'.jpg';
+    }
+    
+    
+    
+    
+    
+    
+}
 
 
 
