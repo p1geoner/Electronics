@@ -756,8 +756,7 @@ a {
   justify-content: start;
   align-items: center;
 }
-.first-line .rassrochka-info {
-}
+
 .first-line__text {
   display: flex;
   margin: 0 6px;
@@ -907,8 +906,7 @@ a {
   color: #f05757;
   border-bottom: 1px solid #f05757;
 }
-.tabs__body {
-}
+
 .tabs__body-content {
   display: none;
   width: 741px;
