@@ -99,6 +99,7 @@ function gray(){
 }
 dis_like.onclick=gray;
 memory_main_text=document.getElementById('memory-js-main_text');
+memory_char_text=document.getElementById('memory-js-char_text');
 color_main_text=document.getElementById('color-js-main_text');
 old_price_text=document.getElementById('old_price');
 new_price_text=document.getElementById('new_price');
@@ -108,6 +109,7 @@ rassrochka_text=document.getElementById('rassrochka-price-1');
 rassrochka_text_2=document.getElementById('rassrochka-price-2');
 color_text_1=document.getElementById('color-text-js');
 color_text_2=document.getElementById('color-js-main_text');
+color_text_3=document.getElementById('color-char-text');
 var radiocol=document.getElementsByName('radio-color');
 var radiorm =document.getElementsByName('radio-ram');
 
@@ -124,22 +126,27 @@ function changing_text_col(){
         case '1':
             color_text_1.innerHTML="Темная ночь";
             color_text_2.innerHTML="Midnight";
+            color_text_3.innerHTML="Темная ночь";
             break;
         case '2':
             color_text_1.innerHTML="Cияющая звезда";
             color_text_2.innerHTML="Starlight";
+            color_text_3.innerHTML="Cияющая звезда";
             break;
         case '3':
             color_text_1.innerHTML="Синий";
             color_text_2.innerHTML="Blue";
+            color_text_3.innerHTML="Синий";
             break;
         case '4':
             color_text_1.innerHTML="Розовый";
             color_text_2.innerHTML="Ping";
+            color_text_3.innerHTML="Розовый";
             break;
         case '5':
             color_text_1.innerHTML="Красный";
             color_text_2.innerHTML="PRODUCT(Red)";
+            color_text_3.innerHTML="Красный";
             break;
                 
     }
@@ -148,6 +155,7 @@ function changing_text(){
     
     switch (this.value){
         case '1': memory_main_text.innerHTML="128GB";
+        memory_char_text.innerHTML="128GB";
         old_price_text.innerHTML="79 990";
         new_price_text.innerHTML="77 990";
         bonus_text.innerHTML="+1 950";
@@ -156,6 +164,7 @@ function changing_text(){
         rassrochka_text_2.innerHTML="3 612";
         break;
         case '2': memory_main_text.innerHTML="256GB";
+        memory_char_text.innerHTML="256GB";
         old_price_text.innerHTML="84 990";
         new_price_text.innerHTML="82 990";
         bonus_text.innerHTML="+2 161";
@@ -164,6 +173,7 @@ function changing_text(){
         rassrochka_text_2.innerHTML="4 351";
         break;
         case '3': memory_main_text.innerHTML="512GB";
+        memory_char_text.innerHTML="512GB";
         old_price_text.innerHTML="89 990";
         new_price_text.innerHTML="87 990";
         bonus_text.innerHTML="+2 923";

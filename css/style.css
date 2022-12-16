@@ -937,7 +937,7 @@ a {
 .footer__tabs-header-item img {
   display: none;
 }
-.tabs__body-content h2 {
+.tabs__body-content-title {
   height: 28px;
 
   font-family: "Roboto";
@@ -946,6 +946,63 @@ a {
   font-size: 24px;
   line-height: 28px;
   color: #1e2022;
+}
+.characteristics__title {
+  font-size: 20px;
+  color: #000;
+  margin: 0;
+  margin-bottom: 16px;
+}
+.tabs__body-content h1 {
+  font-size: 28px;
+  margin: 20px 0;
+}
+.characteristics {
+  margin-top: 24px;
+}
+.characteristics__text-dotted {
+  display: flex;
+  justify-content: space-between;
+  max-width: 741px;
+  white-space: pre-wrap;
+  position: relative;
+  overflow: hidden;
+  margin-top: 12px;
+}
+.characteristics__text-dotted span:last-of-type {
+  float: left;
+  width: 250px;
+  display: inline;
+  white-space: nowrap;
+}
+.characteristics__text-dotted span:last-of-type::after {
+  content: " ";
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  position: absolute;
+  left: 66%;
+  right: -500px;
+  bottom: 0;
+  z-index: 1;
+  border-bottom: 1px solid white;
+}
+.characteristics__text-dotted span:first-of-type {
+  display: inline-block;
+  position: relative;
+  color: #8e8e93;
+}
+.characteristics__text-dotted span:first-of-type::after {
+  content: " ";
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  position: absolute;
+  left: 100%;
+  right: -500px;
+  bottom: 0;
+  z-index: 0;
+  border-bottom: 1px dotted rgb(210, 210, 210);
 }
 /* популярный отзыв */
 .famous-review__user-info-text_red {
