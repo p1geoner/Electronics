@@ -85,4 +85,12 @@ fetch('https://fakestoreapi.com/users?limit=7')
               return A<B;
             })
          
-          
+            window.onload = function () {
+              const activeTabIndex = window.localStorage.getItem('activeTabIndex');
+
+            if (activeTabIndex) {
+              // localStorage values are saved as strings so we have
+              // to convert `activeTabIndex` to a number first.
+              document.querySelectorAll('.tablinks')[Number(activeTabIndex)].classList.add('active');
+            }
+       }

@@ -3,6 +3,7 @@ let contentItem = document.querySelectorAll('.tabs__body-content');
 let link = document.querySelectorAll('.all-characteristics-link');
 let contTab = document.querySelectorAll('.tab-2');
 let navTab = document.querySelectorAll('.tab');
+var reloadTab=localStorage.getItem('tab');
 link.forEach(function(elem){
     elem.addEventListener('click',open);
 })
@@ -32,18 +33,29 @@ function activeTab(){
     })
     this.classList.add('active');
     let tabName = this.getAttribute('data-tab');
-    console.log(tabName);
+    // console.log(tabName);
     activeTabContent(tabName);
+    localStorage.setItem('tab',tabName);
+    reloadTab=localStorage.getItem('tab');
+            console.log(localStorage.getItem('tab'))
+            console.log(reloadTab)
+            
 }
 function activeTabContent(tabName){
     contentItem.forEach(function(item){
         if(item.classList.contains(tabName)){
             item.classList.add('active');
+            
         }else{
             item.classList.remove('active');
         }
     })
 }
+
+
+console.log(reloadTab);
+document.getElementById(''+reloadTab+'').classList.add('active');
+localStorage.getItem('tab')
 var img = ['heart','heart-red'];
 heart = document.querySelector('.estimates__butn-1-heart');
 i=1;
