@@ -562,9 +562,14 @@
               5tab
             </div>
             <div class="tabs__body-content tab-6">
-              <div class="tabs__body-content-btns">
-                <button onclick="sort(arr,arr2,arr3,function(A, B) {return A<B;})">Сначала с высокой оценкой</button>
-                <button onclick="sort(arr,arr2,arr3,function(A, B) {return A>B;})">Сначала с низкой оценкой</button>
+              <div class="dropdown">
+                <button class="dropbtn">Показать</button>
+                <div class="dropdown-content">
+                  <a class="dropdown-content-button"
+                    onclick="sort(arr,arr2,arr3,function(A, B) {return A<B;})">Позитивные</ф>
+                    <a class="dropdown-content-button"
+                      onclick="sort(arr,arr2,arr3,function(A, B) {return A>B;})">Негативные</a>
+                </div>
               </div>
               <div class="famous-review__user-info">
                 <p><span class="famous-review__user-info-text_black" id="0">Антон</span><span
