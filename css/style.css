@@ -78,6 +78,120 @@ body {
   border-top: 1px solid;
   width: 100%;
 }
+/* watched */
+.viewed {
+  margin-bottom: 60px;
+}
+
+.viewed__title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  margin-bottom: 19px;
+  color: var(--black-color);
+}
+
+.block {
+  list-style-type: none;
+  width: 265px;
+  min-height: 413px;
+  padding: 20px 0px;
+  gap: 20px;
+}
+
+.block:not(:last-child) {
+  margin-right: 20px;
+}
+
+.img {
+  margin-bottom: 20px;
+}
+
+.reviewe__descr {
+  min-width: 200px;
+  min-height: 55px;
+  margin-bottom: 10px;
+}
+
+.coffee-machine {
+  margin-bottom: 11px;
+}
+
+.price {
+  margin-bottom: 20px;
+}
+
+.cart {
+  width: 80px;
+  min-height: 40px;
+  padding: 4px 24px;
+  background-color: var(--cherry-color);
+  border: 1px solid var(--cherry-color);
+  border-radius: 6px;
+  margin-right: 16px;
+}
+
+.cart:hover {
+  cursor: pointer;
+  background-color: var(--cherrydark-color);
+  transition: background 0.5s ease-in-out;
+}
+
+.cartt {
+  cursor: ponter;
+  background-color: var(--white-color);
+  border: 1px solid var(--cherrydark-color);
+  transition: background 0.5s ease-in-out, border 0.5s ease-in-out;
+}
+
+.favourites {
+  color: var(--cherry-color);
+}
+
+.favourites:hover {
+  cursor: pointer;
+  color: var(--cherrydark-color);
+  transition: color 0.5s ease-in-out;
+}
+
+.heartt {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  margin-right: 23px;
+  border: none;
+  background: url("../img/heart.png") no-repeat;
+}
+
+.pricee {
+  margin-bottom: 36px;
+}
+
+.viewed__blocks {
+  position: relative;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.left-arrow {
+  background: url(../img/left.png) no-repeat;
+  width: 38px;
+  height: 38px;
+  left: -3%;
+}
+
+.right-arrow {
+  background: url(../img/right.png) no-repeat;
+  width: 38px;
+  height: 38px;
+  left: 80%;
+}
+
+.slid2 {
+  width: 180px;
+  height: 180px;
+}
+/* /watched */
 .logo__img {
   width: 149px;
   height: 35px;
@@ -976,8 +1090,8 @@ a {
   white-space: nowrap;
 }
 .dropbtn {
-  background-color: #1e2022;
-  color: #b4b4b8;
+  background-color: #6b0404;
+  color: #ffffff;
   padding: 16px;
   font-size: 16px;
   border: none;
@@ -1017,7 +1131,7 @@ a {
 }
 
 .dropdown:hover .dropbtn {
-  background-color: #000000;
+  background-color: #bf5454;
 }
 .characteristics__text-dotted span:last-of-type::after {
   content: " ";
@@ -1205,6 +1319,18 @@ a {
 }
 .header__navigation-geo img {
   margin-right: 11px;
+}
+.user-watched {
+  margin-bottom: 150px;
+}
+.carousel-control-next,
+.carousel-control-prev {
+  width: 5% !important;
+  height: 90%;
+  background: url("img/left.jpg") !important;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: 100% 100%;
 }
 .user-watched__text_bold {
   margin: 0;

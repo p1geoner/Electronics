@@ -53,8 +53,8 @@ function activeTabContent(tabName){
 }
 
 
-console.log(reloadTab);
-document.getElementById(''+reloadTab+'').classList.add('active');
+// console.log(reloadTab);
+// document.getElementById(''+reloadTab+'').classList.add('active');
 localStorage.getItem('tab')
 var img = ['heart','heart-red'];
 heart = document.querySelector('.estimates__butn-1-heart');
