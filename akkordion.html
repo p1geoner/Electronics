@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style_new.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <footer class="footer">
+    <div class="footer_max-width">
+      <div class="footer__tabs">
+        <div class="footer__tabs_container">
+          <div class="footer__tabs-header">btn <img class="footer__tabs-header-img" src="img/strelka-footer.svg" alt="">
+          </div>
+          <div class="footer__tabs-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus ad optio
+            accusamus, laboriosam dolores ullam labore perspiciatis, consequuntur ducimus quis alias voluptates cum
+            facere doloremque asperiores accusantium, dolorum similique dolore!</div>
+          <div class="footer__tabs-header">btn <img class="footer__tabs-header-img" src="img/strelka-footer.svg" alt="">
+          </div>
+          <div class="footer__tabs-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae soluta totam quos
+            at ullam, quibusdam, cupiditate amet expedita rerum voluptas necessitatibus iste doloribus omnis sequi
+            beatae consequatur accusantium fugiat nobis?</div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <script>
+    let current_rotation = 0;
+    document.querySelectorAll('.footer__tabs-header').forEach((el) => {
+      el.addEventListener('click', () => {
+        let content = el.nextElementSibling;
+        let child = el.lastElementChild;
+        document.querySelectorAll('.footer__tabs-header-img').forEach((el) => {
+          el.style.transform = 'rotate(' + 0 + 'deg)';
+        })
+        if (content.style.maxHeight) {
+          console.log(child);
+
+          current_rotation = 180;
+          document.querySelectorAll('.footer__tabs-header-img').forEach((el) => {
+            el.style.transform = 'rotate(' + 0 + 'deg)';
+          })
+          document.querySelectorAll('.footer__tabs-body').forEach((el) => {
+            el.style.maxHeight = null
+          });
+
+        } else {
+
+          document.querySelectorAll('.footer__tabs-body').forEach((el) => {
+            el.style.maxHeight = null
+          });
+          current_rotation = 180;
+          child.style.transform = 'rotate(' + current_rotation + 'deg)';
+          content.style.maxHeight = content.scrollHeight + 'px';
+        }
+      })
+    })
+  </script>
+</body>
+
+
+</html>
